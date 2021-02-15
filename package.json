@@ -1,9 +1,13 @@
 {
-  "name": "base",
+  "name": "primer-react-playground",
   "version": "0.1.0",
-  "description": "Template for starting projects with eslint, prettier, and other configs set up.",
+  "description": "Trying out Primer",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,11 +21,20 @@
   },
   "homepage": "https://github.com/nickFalcone/base#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   }
 }
